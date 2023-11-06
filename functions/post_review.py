@@ -38,10 +38,11 @@ def main(dict):
     """
 
     secret = {
-        "URL": "https://a7637d95-13fd-4d36-bd33-c43326d44b48-bluemix.cloudantnosqldb.appdomain.cloud",
-        "IAM_API_KEY": "KvcAgqnvLvK8TRAqUujdAmrtR8mVwTjK2yHxDBDU9GQ1",
-        "ACCOUNT_NAME": "a7637d95-13fd-4d36-bd33-c43326d44b48-bluemix",
+        "URL": "https://677aeeab-6b5a-496f-af72-ea60db8951e9-bluemix.cloudantnosqldb.appdomain.cloud",
+        "IAM_API_KEY": "MYOYP9pRR3RaIXRbITWlNo1oGLFE_JOvIt_HiMGNz88i",
+        "ACCOUNT_NAME": "677aeeab-6b5a-496f-af72-ea60db8951e9-bluemix",
     }
+    
 
     client = Cloudant.iam(
         account_name=secret["ACCOUNT_NAME"], 
