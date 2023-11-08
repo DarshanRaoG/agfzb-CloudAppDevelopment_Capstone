@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 def get_dealerships(request):
     if request.method == "GET":
         context = {}
-        url = "https://9bebcb01.eu-de.apigw.appdomain.cloud/api/dealership"
+        url = "https://us-south.functions.appdomain.cloud/api/v1/web/f4cadd2f-363a-45ae-a6ab-087a8c27f8ff/dealership-package/get-dealership"
         # Get dealers from the Cloudant DB
         context["dealerships"] = get_dealers_from_cf(url)
 
@@ -105,7 +105,7 @@ def registration_request(request):
 def get_dealer_details(request, dealer_id):
     context = {}
     if request.method == "GET":
-        url = 'https://9bebcb01.eu-de.apigw.appdomain.cloud/api/review'
+        url = 'https://us-south.functions.appdomain.cloud/api/v1/web/f4cadd2f-363a-45ae-a6ab-087a8c27f8ff/dealership-package/get_reviews.py'
         reviews = get_dealer_reviews_from_cf(url, dealer_id=dealer_id)
         context = {
             "reviews":  reviews, 
